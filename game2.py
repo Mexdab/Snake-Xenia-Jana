@@ -7,25 +7,25 @@ pygame.init()
 SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
 CELL_SIZE = 20  # size of each snake block
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-icon = pygame.image.load("final.png")  # game icon
+icon = pygame.image.load("assets/images/final.png")  # game icon
 pygame.display.set_icon(icon)
 pygame.display.set_caption("Snake Xenia")
 
 # Background image
-bg = pygame.image.load("mback.png")  # background
+bg = pygame.image.load("assets/images/mback.png")  # background
 bg = pygame.transform.scale(bg, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Food image (rat)
-food_img = pygame.image.load("rat.png")  # rat image
+food_img = pygame.image.load("assets/images/rat.png")  # rat image
 FOOD_SIZE = 30  # bigger rat size
 food_img = pygame.transform.scale(food_img, (FOOD_SIZE, FOOD_SIZE))
 
 # Snake image
-snake_img = pygame.image.load("snake_icon.jpg").convert_alpha()  # snake body
+snake_img = pygame.image.load("assets/images/snake_icon.jpg").convert_alpha()  # snake body
 snake_img = pygame.transform.scale(snake_img, (CELL_SIZE, CELL_SIZE))
 
 # Sound effect when rat eaten
-eat_sound = pygame.mixer.Sound("audio.mp3")  # squeak sound
+eat_sound = pygame.mixer.Sound("assets/audio/audio.mp3")  # squeak sound
 
 # Colors
 WHITE = (255, 255, 255)
